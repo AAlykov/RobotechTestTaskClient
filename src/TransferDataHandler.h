@@ -2,9 +2,8 @@
 
 #include "Pinger.h"
 
-#include <QObject>
 #include <QDateTime>
-//#include <QStringListModel>
+#include <QObject>
 #include <TcpClientHandler.h>
 
 class TransferDataHandler : public QObject
