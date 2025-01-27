@@ -1,6 +1,6 @@
 # RobotechTestTaskClient
 
-## Сборка проекта на Linux
+## Сборка и запуск проекта на Linux
 
 1. Установить зависимости
 Убедитесь, что все необходимые инструменты и библиотеки установлены:
@@ -9,6 +9,7 @@ sudo apt update
 sudo apt install cmake build-essential qtbase5-dev libqt5widgets5 qtdeclarative5-dev qttools5-dev-tools
 ```
 2. Сборка проекта
+   
 2.1. Зайдите в каталог скаченного проекта. Создайте папку для сборки (рекомендуется использовать отдельный каталог для сборки):
 ```bash
 mkdir build
@@ -27,7 +28,14 @@ cmake .. -DCMAKE_PREFIX_PATH=/opt/Qt/5.15.2/gcc_64
 make
 ```
 
-## Сборка проекта на Windows
+3.Также проект можно собрать с помощью Qt Creator через основной cmake-файл.
+
+4. Запуск 
+```bash
+bin/RobotechTestTaskClient 
+```
+
+## Сборка и запуск проекта на Windows
 
 1. Конфигурация и сборка
 Откройте Qt Command Prompt (если используете MinGW) или откройте терминал Developer Command Prompt for VS (если используете MSVC).
@@ -63,6 +71,10 @@ cmake --build . --config Release
 
 5. Также проект можно собрать с помощью Qt Creator через основной cmake-файл.
 
+6. Запуск 
+```bash
+bin/RobotechTestTaskClient.exe
+```
 ![client](https://github.com/user-attachments/assets/25d13564-3e57-4205-b8af-402bd859fa98)
 
 
